@@ -44,13 +44,18 @@ function onDeviceReady()
   navigator.notification.alert("PhoneGap is ready!");
   //Resolve PhoneGap after deviceready has fired
 	pgReady.resolve();
+}
 
+function msg()
+{
+  navigator.notification.alert("aaaaaa");
+}
 
 app.initialize(function() 
 {
   alert("startujemy");
   navigator.notification.alert("PhoneGap is ready!");
-  
+
 	$("a.initialize").on("vclick", initialize);
   
   $("a.enable").on("vclick", enable);
