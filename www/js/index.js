@@ -41,8 +41,16 @@ $.when(jqmReady, pgReady).then(function()
 
 function onDeviceReady()
 {
-	//Resolve PhoneGap after deviceready has fired
+  alert("start");
+	//navigator.notification.alert("PhoneGap is ready!");
+  //Resolve PhoneGap after deviceready has fired
 	pgReady.resolve();
+}
+
+function onBodyLoad() {
+  alert("start");
+       document.addEventListener("deviceready",onDeviceReady,
+       false);
 }
 
 app.initialize(function() 
