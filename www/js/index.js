@@ -47,6 +47,8 @@ function onDeviceReady()
 
 app.initialize(function() 
 {
+  alert('start')
+
 	$("a.initialize").on("vclick", initialize);
   
   $("a.enable").on("vclick", enable);
