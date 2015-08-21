@@ -53,8 +53,7 @@ function msg()
 
 app.initialize(function() 
 {
-  alert("startujemy");
-  navigator.notification.alert("PhoneGap is ready!");
+  $("#initialize").on("touchend", function () { alert("message"); });
 
 	$("a.initialize").on("vclick", initialize);
   
