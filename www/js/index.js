@@ -41,22 +41,16 @@ $.when(jqmReady, pgReady).then(function()
 
 function onDeviceReady()
 {
-  alert("start");
-	//navigator.notification.alert("PhoneGap is ready!");
+  navigator.notification.alert("PhoneGap is ready!");
   //Resolve PhoneGap after deviceready has fired
 	pgReady.resolve();
-}
 
-function onBodyLoad() {
-  alert("start");
-       document.addEventListener("deviceready",onDeviceReady,
-       false);
-}
 
 app.initialize(function() 
 {
-  alert("start");
-
+  alert("startujemy");
+  navigator.notification.alert("PhoneGap is ready!");
+  
 	$("a.initialize").on("vclick", initialize);
   
   $("a.enable").on("vclick", enable);
