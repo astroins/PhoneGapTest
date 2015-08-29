@@ -348,11 +348,9 @@ function startScan()
 {
 	//TODO Disconnect / Close all addresses and empty
 	
-  alert('start scanning')
-
-	var paramsObj = {serviceUuids:[]};
+  var paramsObj = {serviceUuids:[]};
 	
-	console.log("Start Scan : " + JSON.stringify(paramsObj));
+	alert("Start Scan : " + JSON.stringify(paramsObj));
 	
   bluetoothle.startScan(startScanSuccess, startScanError, paramsObj);
   
