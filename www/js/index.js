@@ -271,7 +271,7 @@ function initialize()
 
 function initializeSuccess(obj)
 {
-	console.log("Initialize Success : " + JSON.stringify(obj));
+	alert("Initialize Success : " + JSON.stringify(obj));
 	
   if (obj.status == "enabled")
   {
@@ -285,7 +285,7 @@ function initializeSuccess(obj)
 
 function initializeError(obj)
 {
-  console.log("Initialize Error : " + JSON.stringify(obj));
+  alert("Initialize Error : " + JSON.stringify(obj));
 }
 
 function enable()
